@@ -1,6 +1,7 @@
 import './hero.css'
 import { useState, useEffect } from 'react'
 import { Clock, Star } from 'lucide-react';
+import { formatTime } from '../utils';
 
 function Hero() {
 
@@ -49,7 +50,7 @@ function Hero() {
                 <h1>{currentMovie.title}</h1>
                 <p>
                     <Clock size={28} color="#ef8d05" /> 
-                    <span>Screen Time: {currentMovie.running_time} mins</span>
+                    <span>Screen Time: {formatTime(currentMovie.running_time)}</span>
                 </p>
                 <p>
                     <Star size={28} color="#ef8d05" fill="#ef8d05" /> 
