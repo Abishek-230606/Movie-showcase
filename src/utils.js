@@ -10,5 +10,5 @@ export function formatTime(totalMinutes) {
     if (remainingMinutes === 0) {
         return `${hours}hr`;
     }
-    return `${hours}h ${remainingMinutes}m`;
+    return `${hours}hrs ${remainingMinutes}min`;
 }

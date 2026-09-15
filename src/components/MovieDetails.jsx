@@ -26,6 +26,7 @@ function MovieDetails() {
     if (!movie) {
         return <div className="error">Movie not found!</div>;
     }
+    
 
     return (
         <div className="movie-details-container">
